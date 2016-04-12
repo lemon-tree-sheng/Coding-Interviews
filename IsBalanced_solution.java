@@ -25,7 +25,7 @@ public class IsBalanced_solution{
         int depthR = TreeDepth(pRoot.right) + 1;
         return depthL > depthR ? depthL : depthR;
     }
-
+    //思路2：
     public boolean IsBalanced_Solution(TreeNode root) {
         return IsBalanced_Solution(root, new int[1]);
     }

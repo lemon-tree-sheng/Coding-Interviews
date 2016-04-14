@@ -6,7 +6,7 @@
 public class ReverseSentence {
 	//思路1：
 	public String ReverseSentence(String str) {
-        if(str == null || str.trim().equals("")){
+        if(str == null || str.trim().equals("") || !str.contains(" ")){
         	return str;
         }
 
@@ -14,7 +14,7 @@ public class ReverseSentence {
         reverse(charArray, 0, str.length() - 1);
         int start = 0, end = 0;
         while(start < str.length()){
-        	while(charArray[end] != ' ' && end != str.length() - 1){
+        	while(end != str.length() && charArray[end] != ' '){
         		end++;
         	}
 

@@ -36,4 +36,3 @@ public class StrToInt {
         return result * sign;
     }
 }
-}
